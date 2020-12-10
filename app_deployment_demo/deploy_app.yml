@@ -1,5 +1,6 @@
 ---
 - name: Deploy Application
+  hosts: rest
   become: yes
   gather_facts: false
 
