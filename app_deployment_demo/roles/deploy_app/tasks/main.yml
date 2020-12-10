@@ -1,6 +1,6 @@
 ---
 - name: "Check for any existing running process of {{ app_name }}"
-  shell: "ps -ef | grep {{ app_artifact_id }}-{{ app_version }} | grep -v grep | awk '{print $2}'"
+  shell: "ps -ef | grep {{ app_artifact_id }}-* | grep -v grep | awk '{print $2}'"
   register: app_process_id
 
 - name: Terminate existing process
