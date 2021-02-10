@@ -1,6 +1,6 @@
 ---
 - name: Check that web app is still running after updates
-  hosts: localhost
+  hosts: rest
   gather_facts: false
 
   roles:
